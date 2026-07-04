@@ -13,28 +13,92 @@
         }
         
         .main {
-            background-color: rgba(152, 147, 147, 0.41);
+            background-color: rgba(112, 110, 110, 0.305);
             padding: 50px;
             margin-left: 100px;
             margin-right: 100px;
-            margin-top: 150px;
+            margin-top: 50px;
             border-radius: 20px;
+            border:1px solid;
+            border-color: white;
+            box-shadow: 0 10px 10px rgba(23, 22, 22, 0.393) ;
+            
 
         }
 
         .div2 {
-            background-color: bisque;
+            background-color: rgba(84, 81, 81, 0.153);
             padding: 20px;
             display: flex;
             justify-content: center;
-            margin-right: 70px;
+            margin-right: 60px;
             margin-left: 70%;
             border-radius: 20px;
+            border: 1px solid;
+            border-color: rgb(209, 205, 205);
+            box-shadow: 0 10px 10px rgba(23, 22, 22, 0.233) ;
+            
+            
+        }
+
+        .div2:hover{
+            box-shadow: 0 10px 10px rgba(23, 22, 22, 0.604) ;
         }
         .form{
             text-align: center;
             padding: 20px;
             
+        }
+        
+        .inputs{
+            padding: 7px;
+            width: 100%;
+            border-radius: 20px;
+            background-color: rgba(84, 81, 81, 0.153);
+            border: 2px solid;
+            border-color: rgba(255, 255, 255, 0.477);
+            text-align: center;
+            color: white;
+        }
+
+        .inputs:hover{
+            border-color: white;
+            border-width: 2px;
+        }
+        .inputs::placeholder{
+            color: white;
+            text-align: center;
+        }
+        label{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 15px;
+        }
+        .btn{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            background-color: rgba(84, 81, 81, 0.153);
+            font-size: 15px;
+            width: 100px;
+            border: 1px solid;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 22px;
+            padding-right: 30px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .btn:hover{
+            background-color: rgba(0, 0, 0, 0.314);
+            border-color: rgba(0, 0, 0, 0.314);
+        }
+        h2{
+            color: white;
+            
+        }
+        hr{
+            
+            color: rgba(203, 196, 196, 0.444);;
         }
     </style>
 
@@ -42,26 +106,31 @@
 
 <body>
     <div class="main">
-        <div class="div2">
-            <form action="" class="form">
 
-                <label for="">First Name</label>
+        <div class="div2">
+            
+            <form action="" class="form">
+                <h2>Register Now!</h2>
+                <hr>
                 <br>
-                <input type="text">
+
+                <label for="" >First Name</label>
+                <br><br>
+                <input type="text" placeholder="Enter Your First name" class="inputs">
                 <br><br>
                 <label for="">Last Name</label>
-                <br>
-                <input type="text">
                 <br><br>
-                <label for="">email</label>
-                <br>
-                <input type="email">
+                <input type="text" placeholder="Enter Your Last name" class="inputs">
+                <br><br>
+                <label for="" >email</label>
+                <br><br>
+                <input type="email" placeholder="Enter Your Email" class="inputs">
                 <br><br>
                 <label for="">Password</label>
-                <br>
-                <input type="password">
                 <br><br>
-                <button>Register</button>
+                <input type="password" placeholder="Enter Your Password" class="inputs">
+                <br><br>
+                <button class="btn">Register</button>
             </form>
 
         </div>
